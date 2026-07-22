@@ -1,0 +1,342 @@
+.sunset-home {
+  --sh-primary: #ac3509;
+  --sh-primary-container: #ff7043;
+  --sh-primary-fixed: #ffdbd0;
+  --sh-on-primary-fixed: #3a0a00;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: Inter, "DM Sans", sans-serif;
+  background: #120b06;
+}
+
+.sunset-home * {
+  box-sizing: border-box;
+}
+
+.sunset-home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sunset-home .sh-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-image: var(--sh-hero-image);
+  background-size: cover;
+  background-position: center;
+  animation: shKenburns 40s ease-in-out infinite alternate;
+}
+
+.sunset-home .sh-hero-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.52));
+  backdrop-filter: blur(4px);
+}
+
+.sunset-home .sh-ambient-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 112, 67, 0.16) 0%, transparent 50%);
+}
+
+.sunset-home .sh-hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 112px 20px 108px;
+  text-align: center;
+}
+
+.sunset-home .sh-hero-copy {
+  max-width: 820px;
+  color: #ffffff;
+  animation: shFadeInUp 720ms ease-out both;
+}
+
+.sunset-home .sh-mobile-brand-line {
+  display: none;
+}
+
+.sunset-home .sh-mobile-logo-image {
+  display: block;
+  width: min(220px, 62vw);
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.18));
+}
+
+.sunset-home .sh-resort-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--sh-primary-fixed);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sunset-home .sh-resort-eyebrow .material-symbols-outlined {
+  font-size: 22px;
+}
+
+.sunset-home .sh-hero-copy h1 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.sunset-home .sh-hero-copy h2 {
+  margin: 0 0 14px;
+  color: var(--sh-primary-fixed);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(23px, 2vw, 30px);
+  font-weight: 600;
+}
+
+.sunset-home .sh-hero-lead {
+  max-width: 660px;
+  margin: 0 auto 18px;
+  color: var(--sh-primary-fixed);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(24px, 2vw, 30px);
+  font-weight: 500;
+  line-height: 1.45;
+  opacity: 0.96;
+}
+
+.sunset-home .sh-hero-support {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(18px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.sunset-home .sh-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.sunset-home .sh-primary-action,
+.sunset-home .sh-secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 40px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background 220ms ease, color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+.sunset-home .sh-primary-action {
+  background: var(--sh-primary);
+  color: #ffffff;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.25);
+}
+
+.sunset-home .sh-primary-action:hover {
+  background: var(--sh-primary-container);
+  transform: translateY(-1px);
+}
+
+.sunset-home .sh-secondary-action {
+  border: 1px solid var(--sh-primary-fixed);
+  color: var(--sh-primary-fixed);
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.sunset-home .sh-secondary-action:hover {
+  background: var(--sh-primary-fixed);
+  color: var(--sh-on-primary-fixed);
+  transform: translateY(-1px);
+}
+
+.sunset-home .sh-home-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 28px clamp(20px, 5vw, 64px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sunset-home .sh-home-footer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sunset-home .sh-home-footer div {
+  display: flex;
+  gap: 32px;
+}
+
+.sunset-home .sh-home-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 200ms ease;
+}
+
+.sunset-home .sh-home-footer a:hover {
+  color: #ffffff;
+}
+
+@keyframes shKenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes shFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .sunset-home {
+    touch-action: pan-x;
+  }
+
+  .sunset-home .sh-hero-content {
+    align-items: center;
+    justify-content: center;
+    padding: 82px 20px 126px;
+  }
+
+  .sunset-home .sh-hero-background {
+    background-position: center;
+  }
+
+  .sunset-home .sh-hero-background::after {
+    background: rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(4px);
+  }
+
+  .sunset-home .sh-ambient-glow {
+    opacity: 0.18;
+  }
+
+  .sunset-home .sh-hero-copy {
+    width: min(100%, 440px);
+  }
+
+  .sunset-home .sh-resort-eyebrow {
+    margin-bottom: 14px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  .sunset-home .sh-resort-eyebrow .material-symbols-outlined {
+    font-size: 19px;
+  }
+
+  .sunset-home .sh-hero-copy h1 {
+    margin-bottom: 14px;
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1.15;
+  }
+
+  .sunset-home .sh-hero-copy h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  .sunset-home .sh-mobile-brand-line {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  .sunset-home .sh-hero-lead {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .sunset-home .sh-hero-support {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .sunset-home .sh-hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .sunset-home .sh-primary-action,
+  .sunset-home .sh-secondary-action {
+    width: min(100%, 320px);
+    min-height: 54px;
+    border-radius: 8px;
+    padding: 0 28px;
+  }
+
+  .sunset-home .sh-home-footer {
+    flex-direction: column;
+    padding: 16px 20px 24px;
+    gap: 12px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .sunset-home .sh-home-footer div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sunset-home .sh-hero-background,
+  .sunset-home .sh-hero-copy {
+    animation: none;
+  }
+}

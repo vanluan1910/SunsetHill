@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #120B06;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.warm-page-bg {
+  position: relative;
+  isolation: isolate;
+  background-image: url('https://res.cloudinary.com/dwb9x5s1j/image/upload/v1784198954/a0f49b5a-926e-4d8c-b9e0-38e758bb30a8_tpkfmu.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.warm-page-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(247, 239, 228, 0.55);
+}
+
+.warm-page-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 92% 12%, rgba(42, 22, 10, 0.1), transparent 32%),
+    radial-gradient(ellipse at 4% 88%, rgba(211, 154, 83, 0.1), transparent 30%);
+  opacity: 0.8;
+}
+
+.warm-page-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .warm-page-bg {
+    background-attachment: scroll;
+    background-position: center top;
+    min-height: 100dvh;
+  }
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.decorative-leaf {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.wave-footer {
+  background: #120B06;
+  clip-path: ellipse(80% 100% at 50% 100%);
+}
+
+.bg-pattern-3 {
+  background-color: #fdfdfd;
+  background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+  position: relative;
+  overflow: hidden;
+}
+
+.palm-leaf-top-right {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  opacity: 0.05;
+  background-image: url('https://www.transparenttextures.com/patterns/leaves.png');
+  pointer-events: none;
+}
+
+.palm-leaf-bottom-left {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  opacity: 0.05;
+  background-image: url('https://www.transparenttextures.com/patterns/leaves.png');
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+
+.gold-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.gold-bullets li::before {
+  content: "\2022";
+  color: #D39A53;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(26, 58, 58, 0.05);
+  transform: translateY(-2px);
+}
+
+.card-pale-yellow {
+  background-color: #FFFCEB;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.card-pale-yellow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(212, 175, 55, 0.08);
+}
+
+.beach-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.reveal-soft {
+  animation: revealSoft 680ms ease-out both;
+}
+
+.reveal-card {
+  animation: revealCard 720ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.reveal-stagger > * {
+  animation: revealCard 720ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.reveal-stagger > *:nth-child(1) { animation-delay: 80ms; }
+.reveal-stagger > *:nth-child(2) { animation-delay: 140ms; }
+.reveal-stagger > *:nth-child(3) { animation-delay: 200ms; }
+.reveal-stagger > *:nth-child(4) { animation-delay: 260ms; }
+.reveal-stagger > *:nth-child(5) { animation-delay: 320ms; }
+.reveal-stagger > *:nth-child(6) { animation-delay: 380ms; }
+.reveal-stagger > *:nth-child(n + 7) { animation-delay: 440ms; }
+
+.image-lift {
+  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1), filter 700ms ease;
+}
+
+.group:hover .image-lift,
+.image-lift:hover {
+  transform: scale(1.045);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+@keyframes revealSoft {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealCard {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-soft,
+  .reveal-card,
+  .reveal-stagger > * {
+    animation: none;
+  }
+
+  .image-lift,
+  .group:hover .image-lift,
+  .image-lift:hover {
+    transition: none;
+    transform: none;
+    filter: none;
+  }
+}
