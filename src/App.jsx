@@ -41,12 +41,7 @@ function getHashSlide() {
 function getStoredSlide() {
   const fromHash = getHashSlide();
   if (fromHash !== undefined) return fromHash;
-  try {
-    const v = parseInt(localStorage.getItem(SLIDE_KEY) || '0', 10);
-    return Math.max(0, Math.min(TOTAL_SLIDES - 1, isNaN(v) ? 0 : v));
-  } catch {
-    return 0;
-  }
+  return 0;
 }
 
 function SlideFallback() {
