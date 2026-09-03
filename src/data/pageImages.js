@@ -1,6 +1,6 @@
 export const WELCOME_HERO_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/image/upload/v1784190496/7ae871be-d9ac-421f-89d3-8c69764b950a_ixvmqg.png';
 
-export const HOUSE_RULES_FOOTER_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/image/upload/v1782898549/6A8A1316_hqaklf.png';
+export const HOUSE_RULES_FOOTER_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/image/upload/v1788428061/1788423751922_436999739478378031_g7328569027530867083_1044e4354403c258c14bd65844c99c41_qcbrfi.jpg';
 
 export const LOCAL_FOOD_IMAGES = {
   hamNinh: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBxVtal3yNJnF1FQQ49RT8PJWi3le6oHQ4-z6EoBOno09dul60Ur7bev9zWcsMQ0YnQD_dkrCK4BAytmZBPTCDsVEA47Cq3oDiAn-ACYZE3atsbDRZjS_KM6dLSqc0CQcokVA3uqz5KLjC1xOyH01I9jbujb3g_jeO3rZZDjdGq1GtgTcyPdzctAOhSW8_T4hOuhsM3hNfut7U9xcIQYiMQcB4vo24aoI7dnIUWF2yU5p7RHSjYVuOu',

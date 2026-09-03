@@ -174,6 +174,8 @@ const data = {
   'tours.safariSub': { en: 'Animal Sanctuary', vi: 'Khu bảo tồn động vật', zh: '动物保护区', ko: '동물 보호 구역', ru: 'Заповедник животных' },
   'tours.kissShow': { en: 'Kiss of the Sea Show', vi: 'Show Kiss of the Sea', zh: '海洋之吻秀', ko: '키스 오브 더 씨 쇼', ru: 'Шоу «Поцелуй моря»' },
   'tours.kissShowSub': { en: 'Night Performance', vi: 'Biểu diễn về đêm', zh: '夜间表演', ko: '야간 공연', ru: 'Вечернее представление' },
+  'tours.symphonyShow': { en: 'Symphony of the Sea Show', vi: 'Show Symphony of the Sea', zh: '交响海洋秀', ko: '심포니 오브 더 씨 쇼', ru: 'Шоу «Симфония моря»' },
+  'tours.symphonyShowSub': { en: 'Jetski & Fireworks Show', vi: 'Trình diễn Jetski & Pháo hoa', zh: '摩托艇与烟花表演', ko: '제트스키 & 불꽃놀이 쇼', ru: 'Шоу гидроциклов и фейерверков' },
   'tours.islandHopping': { en: 'Island Hopping Tours', vi: 'Tour đảo', zh: '跳岛游', ko: '섬 투어', ru: 'Экскурсия по островам' },
   'tours.islandHoppingSub': { en: 'Daily Excursion', vi: 'Khám phá hàng ngày', zh: '每日短途游', ko: '일일 여행', ru: 'Ежедневная экскурсия' },
   'tours.snorkeling': { en: 'Snorkeling Tours', vi: 'Tour lặn ống thở', zh: '浮潜之旅', ko: '스노클링 투어', ru: 'Снорклинг-туры' },

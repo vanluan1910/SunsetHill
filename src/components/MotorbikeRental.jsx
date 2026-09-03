@@ -10,9 +10,10 @@ function byId(id) {
 }
 
 function ServiceImage({ service, lang, className = 'h-48' }) {
+  const objectFitClass = service.fitContain ? 'object-contain p-2 bg-[#ece7e2]' : 'object-cover';
   return (
     <div className={`${className} overflow-hidden rounded-2xl bg-[#dfc0b7]/30`}>
-      <img className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" alt={t(service.nameKey, lang)} src={service.img} loading="lazy" decoding="async" />
+      <img className={`h-full w-full ${objectFitClass} transition-transform duration-500 hover:scale-105`} alt={t(service.nameKey, lang)} src={service.img} loading="lazy" decoding="async" />
     </div>
   );
 }

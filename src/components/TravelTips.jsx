@@ -26,7 +26,7 @@ const FAQS = [
 
 const TOURS_LIST = [
   ['tours.cableCar'], ['tours.islandHopping'], ['tours.vinwonders'], ['tours.snorkeling'],
-  ['tours.safari'], ['tours.scubaDiving'], ['tours.kissShow'], ['tours.fishing'],
+  ['tours.safari'], ['tours.scubaDiving'], ['tours.kissShow'], ['tours.symphonyShow'], ['tours.fishing'],
 ];
 
 const TRAVEL_TIMES = [

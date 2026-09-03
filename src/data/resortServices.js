@@ -6,7 +6,8 @@ export const RESORT_SERVICES = [
     icon: 'moped',
     nameKey: 'services.motoTitle',
     descKey: 'services.motoDesc',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCDzsWxcb8cn7fxhyecL3U7Ck8TgBnqBaFwSJh0SIReNSSg_ihILZi0djdsjgmbSjd9bgPRM8MtBQYwDbsoCm9FOzLNHKPTu4FkkxRcjExPNqyneitacMW94K-GGWei1KkSBsTaBxqBvkyp82RJcoZmOToFPY_KlnR1fJC4iltFW0F7tyLWvBK4FQ7lEy3Y9SocXEJRfHXDSHMSTHr_Ae0OKdUZUGabVoGpT1S3eRSCvDAJJHmYnCWX',
+    img: '/honda-vision.jpg',
+    fitContain: true,
     imageAspect: 'aspect-[4/3]',
     details: [
       { labelKey: 'services.rentalFee', values: [{ key: 'services.motoPrice' }] },

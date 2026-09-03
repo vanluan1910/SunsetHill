@@ -22,7 +22,7 @@ const SIGNATURE = [
     nameKey: 'attr.kissBridge', descKey: 'attr.kissBridgeDesc',
     timeKey: 'attr.travel35', hoursKey: 'attr.kissBridgeSub',
     maps: 'https://maps.app.goo.gl/va5sNfcey29BddTS8',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDu4vVsCUuo17cFyCXiPJB8FcnNSl6v3lTPZZ7veQbpDjCM_oQsxDyeFxH127n2_O4VlmwMkYwD8YmbnyyrsVjJXx5kjQDAXMcEOoW4SvyEOVnMUCFingiS9YkDVO5wQ7RV9EmZcwjRcinHKHyIKwN2-QA6MnSUm58gL9loVdD3T0NACCv6MI-kdIcHHt5S6qKV-nlb5ER27dJEZFEFLy3lkwa2oanrJxC8_OBg5T48DaS3rXZeOZRJ',
+    img: 'https://visitphuquoc.com.vn/VisitPhuQuoc/Banner/Home/91/image-thumb__91__720_jpg/Kiss%20of%20the%20Sea%20show.078db5d3.jpg',
   },
 ];
 
