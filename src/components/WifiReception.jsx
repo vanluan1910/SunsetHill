@@ -1,5 +1,5 @@
 import { t } from '../i18n';
-import { RECEPTION_TEL, RECEPTION_WHATSAPP } from '../data/contact';
+import { RECEPTION_TEL, RECEPTION_WHATSAPP, RECEPTION_ZALO } from '../data/contact';
 import PageShell from './shared/PageShell';
 
 const DISPLAY_PHONE = '0768150325';
@@ -76,7 +76,8 @@ function ReceptionPanel({ lang, desktop = false }) {
 
       <div className="mt-5 grid gap-3">
         <ContactStrip icon="call" label={t('wifi.hotlineLabel', lang)} value={DISPLAY_PHONE} href={RECEPTION_TEL} />
-        <ContactStrip icon="chat" label={t('common.whatsapp', lang)} value={DISPLAY_WHATSAPP} href={RECEPTION_WHATSAPP} />
+        <ContactStrip icon="chat" label="Zalo" value={DISPLAY_PHONE} href={RECEPTION_ZALO} />
+        <ContactStrip icon="forum" label={t('common.whatsapp', lang)} value={DISPLAY_WHATSAPP} href={RECEPTION_WHATSAPP} />
       </div>
 
       <div className="mt-6 border-t border-[#E6D3BB] pt-5">

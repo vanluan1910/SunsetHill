@@ -1,9 +1,7 @@
 import { t } from '../i18n';
-import { RECEPTION_TEL } from '../data/contact';
+import { RECEPTION_TEL, RECEPTION_WHATSAPP, RECEPTION_ZALO, DISPLAY_PHONE } from '../data/contact';
 import { RESORT_SERVICES } from '../data/resortServices';
 import PageShell from './shared/PageShell';
-
-const DISPLAY_PHONE = '0768150325';
 
 function byId(id) {
   return RESORT_SERVICES.find((service) => service.id === id);
@@ -139,10 +137,21 @@ function AssistanceCard({ lang, desktop = false }) {
       </div>
       <div className="mt-5 rounded-2xl bg-[#120B06] p-4 text-white">
         <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/60">{t('common.receptionHotline', lang)}</p>
-        <a href={RECEPTION_TEL} className="mt-1 flex items-center gap-2 text-2xl font-bold text-white no-underline">
-          <span className="material-symbols-outlined text-[#D39A53]" aria-hidden="true">call</span>
-          {DISPLAY_PHONE}
-        </a>
+        <div className="mt-2 flex flex-wrap items-center gap-3">
+          <a href={RECEPTION_TEL} className="flex items-center gap-2 text-xl font-bold text-white no-underline hover:text-[#D39A53]">
+            <span className="material-symbols-outlined text-[#D39A53]" aria-hidden="true">call</span>
+            {DISPLAY_PHONE}
+          </a>
+          <div className="flex items-center gap-2">
+            <a href={RECEPTION_ZALO} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-lg bg-[#0068FF] px-3 py-1.5 text-xs font-black text-white no-underline transition-transform hover:scale-105">
+              ZALO
+            </a>
+            <a href={RECEPTION_WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-1 rounded-lg bg-[#25D366] px-3 py-1.5 text-xs font-bold text-white no-underline transition-transform hover:scale-105">
+              <span className="material-symbols-outlined text-sm" aria-hidden="true">chat</span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
       <p className="mt-4 text-sm italic leading-6 text-[#57423b]">{t('services.wishMsg', lang)}</p>
     </section>
@@ -193,10 +202,19 @@ function MotorbikeRental({ lang = 'en' }) {
                 <div>
                   <h2 className="font-serif text-2xl font-semibold text-[#8a501a]">{t('services.needAssistance', lang)}</h2>
                   <p className="mt-3 text-sm leading-6 text-[#57423b]">{t('services.assistMsg', lang)}</p>
-                  <a href={RECEPTION_TEL} className="mt-4 inline-flex items-center gap-2 text-xl font-bold text-[#922f05] no-underline hover:underline">
-                    <span className="material-symbols-outlined" aria-hidden="true">call</span>
-                    {DISPLAY_PHONE}
-                  </a>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a href={RECEPTION_TEL} className="inline-flex items-center gap-2 text-lg font-bold text-[#922f05] no-underline hover:underline">
+                      <span className="material-symbols-outlined" aria-hidden="true">call</span>
+                      {DISPLAY_PHONE}
+                    </a>
+                    <a href={RECEPTION_ZALO} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-lg bg-[#0068FF] px-3 py-1.5 text-xs font-black text-white no-underline shadow transition-transform hover:scale-105">
+                      ZALO
+                    </a>
+                    <a href={RECEPTION_WHATSAPP} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-1 rounded-lg bg-[#25D366] px-3 py-1.5 text-xs font-bold text-white no-underline shadow transition-transform hover:scale-105">
+                      <span className="material-symbols-outlined text-sm" aria-hidden="true">chat</span>
+                      WhatsApp
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
