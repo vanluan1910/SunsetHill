@@ -120,6 +120,97 @@ function CraftCard({ item, lang }) {
   );
 }
 
+function ChurchSection({ lang }) {
+  return (
+    <div className="mt-8 overflow-hidden rounded-[28px] border border-[#dfc0b7]/50 bg-[#FDF8F4] shadow-md">
+      <div className="flex flex-col lg:flex-row">
+        {/* Church Image Banner */}
+        <div className="relative aspect-[16/9] lg:aspect-auto lg:w-5/12 overflow-hidden shrink-0 min-h-[220px]">
+          <img
+            alt={t('attr.churchName', lang)}
+            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+            src="https://i.ytimg.com/vi/AC9toodzkVY/maxresdefault.jpg"
+            loading="lazy"
+            decoding="async"
+          />
+          <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1 text-xs font-bold text-white backdrop-blur-md">
+            <span className="material-symbols-outlined text-sm text-[#e8c39e]" aria-hidden="true">church</span>
+            <span>{t('attr.churchName', lang)}</span>
+          </div>
+        </div>
+
+        {/* Schedule Info */}
+        <div className="flex flex-1 flex-col justify-between p-5 md:p-6">
+          <div>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-[#dfc0b7]/50 pb-3 mb-4">
+              <h3 className="font-sans text-lg md:text-xl font-bold text-[#1d1b19]">
+                {t('attr.churchTitle', lang)}
+              </h3>
+              <a
+                className="inline-flex items-center gap-1.5 self-start sm:self-auto rounded-full bg-[#922f05] px-4 py-1.5 text-xs font-bold text-white no-underline transition-all hover:bg-[#722403]"
+                href="https://maps.app.goo.gl/ctf1g9iH5J3baDzK7"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span className="material-symbols-outlined text-sm" aria-hidden="true">location_on</span>
+                {t('attr.viewMaps', lang)}
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="rounded-[18px] bg-white/90 p-4 border border-[#dfc0b7]/40">
+                <div className="mb-2 flex items-center gap-2 text-sm font-bold text-[#1d1b19]">
+                  <span className="material-symbols-outlined text-base text-[#922f05]" aria-hidden="true">calendar_today</span>
+                  {t('attr.monSat', lang)}
+                </div>
+                <ul className="space-y-1.5 text-xs text-[#57423b]">
+                  <li className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.morningMass', lang)}
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.eveningMass', lang)}
+                  </li>
+                </ul>
+              </div>
+
+              <div className="rounded-[18px] bg-white/90 p-4 border border-[#dfc0b7]/40">
+                <div className="mb-2 flex items-center gap-2 text-sm font-bold text-[#1d1b19]">
+                  <span className="material-symbols-outlined text-base text-[#922f05]" aria-hidden="true">event</span>
+                  {t('attr.sunday', lang)}
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs text-[#57423b]">
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.mass1', lang)}
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.mass2', lang)}
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.mass3', lang)}
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#922f05]" />
+                    {t('attr.mass4', lang)}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-4 text-center text-xs italic text-[#922f05]/90">
+            "{t('attr.churchBlessing', lang)}"
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Attractions({ lang = 'en' }) {
   return (
     <PageShell>
@@ -129,6 +220,7 @@ function Attractions({ lang = 'en' }) {
 
           <section className="mb-9"><SectionHeading title={t('attr.signature', lang)} className="mb-4" /><div className="space-y-4">{SIGNATURE.map((item) => <SignatureCard key={item.nameKey} item={item} lang={lang} />)}</div></section>
           <section><SectionHeading kicker={t('common.islandSoul', lang)} title={t('attr.sightseeing', lang)} className="mb-4" /><div className="space-y-4">{CULTURE.map((item) => <CultureCard key={item.nameKey} item={item} lang={lang} />)}{CRAFTS.map((item) => <CraftCard key={item.nameKey} item={item} lang={lang} />)}</div></section>
+          <ChurchSection lang={lang} />
           <ContactCTA title={t('services.needAssistance', lang)} description={t('tips.contactReception', lang)} actionLabel={t('rules.contactReception', lang)} icon="moped" variant="dark" className="mt-6" />
         </main>
       </div>
@@ -139,7 +231,7 @@ function Attractions({ lang = 'en' }) {
 
           <section className="mx-auto max-w-7xl px-10 py-16"><SectionHeading title={t('attr.signature', lang)} className="mb-10" /><div className="grid grid-cols-12 gap-6"><SignatureCard item={SIGNATURE[0]} lang={lang} className="col-span-8" /><SignatureCard item={SIGNATURE[1]} lang={lang} className="col-span-4" /><SignatureCard item={SIGNATURE[2]} lang={lang} className="col-span-12 min-h-[400px]" feature /></div></section>
 
-          <section className="bg-[#f8f3ef] px-10 py-16"><div className="mx-auto max-w-7xl"><SectionHeading kicker={t('common.islandSoul', lang)} title={t('attr.sightseeing', lang)} className="mb-12" /><div className="grid grid-cols-3 gap-6">{CULTURE.map((item) => <CultureCard key={item.nameKey} item={item} lang={lang} />)}</div><div className="mt-8 grid grid-cols-3 gap-6">{CRAFTS.map((item) => <CraftCard key={item.nameKey} item={item} lang={lang} />)}</div></div></section>
+          <section className="bg-[#f8f3ef] px-10 py-16"><div className="mx-auto max-w-7xl"><SectionHeading kicker={t('common.islandSoul', lang)} title={t('attr.sightseeing', lang)} className="mb-12" /><div className="grid grid-cols-3 gap-6">{CULTURE.map((item) => <CultureCard key={item.nameKey} item={item} lang={lang} />)}</div><div className="mt-8 grid grid-cols-3 gap-6">{CRAFTS.map((item) => <CraftCard key={item.nameKey} item={item} lang={lang} />)}</div><ChurchSection lang={lang} /></div></section>
 
           <ContactCTA title={t('services.needAssistance', lang)} description={t('tips.contactReception', lang)} actionLabel={t('rules.contactReception', lang)} icon="moped" variant="dark" className="mx-10 mb-10" />
         </main>

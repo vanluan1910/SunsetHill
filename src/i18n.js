@@ -262,6 +262,18 @@ const data = {
   'attr.hoursCraft': { en: '08:00 AM – 05:00 PM', vi: '08:00 – 17:00', zh: '08:00 – 17:00', ko: '08:00 – 17:00', ru: '08:00 – 17:00' },
   'attr.hoursPepper': { en: '07:30 AM – 05:00 PM', vi: '07:30 – 17:00', zh: '07:30 – 17:00', ko: '07:30 – 17:00', ru: '07:30 – 17:00' },
 
+    'attr.churchTitle': { en: 'MASS SCHEDULE – DUONG DONG PARISH CHURCH', vi: 'LỊCH THÁNH LỄ – GIÁO XỨ DƯƠNG ĐÔNG', zh: '弥撒时间 – 阳东天主教堂', ko: '미사 시간 – 즈엉동 성당', ru: 'РАСПИСАНИЕ МЕСС – ЦЕРКОВЬ ДУОНГ ДОНГ' },
+  'attr.churchName': { en: 'Duong Dong Parish Church', vi: 'Giáo xứ Dương Đông', zh: '阳东天主教堂', ko: '즈엉동 성당', ru: 'Приходская церковь Дуонг Донг' },
+  'attr.monSat': { en: 'Monday – Saturday', vi: 'Thứ Hai – Thứ Bảy', zh: '周一至周六', ko: '월요일 ~ 토요일', ru: 'Понедельник – Суббота' },
+  'attr.morningMass': { en: '5:00 AM – Morning Mass', vi: '05:00 – Thánh lễ Sáng', zh: '05:00 – 早弥撒', ko: '오전 5:00 – 아침 미사', ru: '05:00 – Утренняя месса' },
+  'attr.eveningMass': { en: '6:00 PM – Evening Mass', vi: '18:00 – Thánh lễ Chiều', zh: '18:00 – 晚弥撒', ko: '오후 6:00 – 저녁 미사', ru: '18:00 – Вечерняя месса' },
+  'attr.sunday': { en: 'Sunday', vi: 'Chủ Nhật', zh: '周日', ko: '일요일', ru: 'Воскресенье' },
+  'attr.mass1': { en: 'Mass 1: 5:00 AM', vi: 'Lễ 1: 05:00', zh: '弥撒 1: 05:00', ko: '미사 1: 오전 5:00', ru: 'Месса 1: 05:00' },
+  'attr.mass2': { en: 'Mass 2: 7:00 AM', vi: 'Lễ 2: 07:00', zh: '弥撒 2: 07:00', ko: '미사 2: 오전 7:00', ru: 'Месса 2: 07:00' },
+  'attr.mass3': { en: 'Mass 3: 4:00 PM', vi: 'Lễ 3: 16:00', zh: '弥撒 3: 16:00', ko: '미사 3: 오후 4:00', ru: 'Месса 3: 16:00' },
+  'attr.mass4': { en: 'Mass 4: 6:00 PM', vi: 'Lễ 4: 18:00', zh: '弥撒 4: 18:00', ko: '미사 4: 오후 6:00', ru: 'Месса 4: 18:00' },
+  'attr.churchBlessing': { en: 'Wishing you a peaceful and meaningful stay.', vi: 'Chúc quý khách một kỳ nghỉ an lành và ý nghĩa.', zh: '祝您度过一个平安而有意义的假期。', ko: '평화롭고 뜻깊은 여행 되시기를 바랍니다.', ru: 'Желаем вам мирного и благословенного отдыха.' },
+
   /* === TIPS === */
   'tips.title': { en: 'Travel Tips & Why Stay?', vi: 'Mẹo du lịch & Tại sao chọn SunSet Hill?', zh: '旅行贴士与选择理由', ko: '여행 팁 & 선택 이유', ru: 'Советы путешественникам' },
   'tips.titleDesktop': { en: 'Travel Tips & Why Stay at SunSet Hill Resort?', vi: 'Mẹo du lịch & Tại sao chọn SunSet Hill Resort?', zh: '旅行贴士与为何选择SunSet Hill Resort？', ko: '여행 팁 & SunSet Hill Resort를 선택해야 하는 이유', ru: 'Советы путешественникам и почему стоит остановиться в SunSet Hill Resort?' },
