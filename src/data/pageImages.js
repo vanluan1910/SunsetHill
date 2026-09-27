@@ -4,7 +4,7 @@ export const HOUSE_RULES_FOOTER_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/im
 
 export const LOCAL_FOOD_IMAGES = {
   hamNinh: 'https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/7/20/1218863/Lang-Chai-Ham-Ninh.jpg',
-  nightMarket: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArwU2kAjOcF8RK-JvLZc2CRkfsvQNA8XxTgztUYYorqCR4zJ1zmpVjscRlpX0OPm3yrcxnV-dmw3Dov33PhATR54dOCO0ccOspdRjHlSWamBdS02sfCKEToyx7IfL5z-ZcUv57rN7hzhR4dwBh4WY2mT70Q3ArDlDuv2Zhnbzoh6MA5S45U6vZkxlo4V_2-uz8TBZKXzoLKX55_nnVsZKsHTq1oi011HI_FOqsaWw5D6UHVM6038oEv2zFQctTB27Au5-y6b8o00Jx',
+  nightMarket: 'https://vnpay.vn/s1/statics.vnpay.vn/2024/5/0zd786p51n2q1715508614405.jpg',
 };
 
 export const TRAVEL_TIPS_IMAGES = {
