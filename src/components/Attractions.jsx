@@ -153,7 +153,7 @@ function ChurchSection({ lang }) {
                 target="_blank"
               >
                 <span className="material-symbols-outlined text-sm" aria-hidden="true">location_on</span>
-                {t('attr.viewMaps', lang)}
+                {t('common.viewMaps', lang)}
               </a>
             </div>
 

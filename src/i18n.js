@@ -1,5 +1,6 @@
 const data = {
   /* === COMMON === */
+  'attr.viewMaps': { en: 'View on Google Maps', vi: 'Xem trên Google Maps', zh: '在谷歌地图上查看', ko: 'Google Maps에서 보기', ru: 'Посмотреть на Google Картах' },
   'common.viewMaps': { en: 'View on Google Maps', vi: 'Xem trên Google Maps', zh: '在谷歌地图上查看', ko: 'Google Maps에서 보기', ru: 'Посмотреть на Google Картах' },
   'common.openingHours': { en: 'Opening Hours:', vi: 'Giờ mở cửa:', zh: '营业时间：', ko: '영업 시간:', ru: 'Часы работы:' },
   'common.adventureAwaits': { en: 'Adventure Awaits', vi: 'Hành trình đang chờ', zh: '冒险正等待', ko: '모험이 기다립니다', ru: 'Приключения ждут' },
