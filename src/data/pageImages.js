@@ -3,7 +3,7 @@ export const WELCOME_HERO_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/image/up
 export const HOUSE_RULES_FOOTER_IMAGE = 'https://res.cloudinary.com/dwb9x5s1j/image/upload/v1788428061/1788423751922_436999739478378031_g7328569027530867083_1044e4354403c258c14bd65844c99c41_qcbrfi.jpg';
 
 export const LOCAL_FOOD_IMAGES = {
-  hamNinh: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBxVtal3yNJnF1FQQ49RT8PJWi3le6oHQ4-z6EoBOno09dul60Ur7bev9zWcsMQ0YnQD_dkrCK4BAytmZBPTCDsVEA47Cq3oDiAn-ACYZE3atsbDRZjS_KM6dLSqc0CQcokVA3uqz5KLjC1xOyH01I9jbujb3g_jeO3rZZDjdGq1GtgTcyPdzctAOhSW8_T4hOuhsM3hNfut7U9xcIQYiMQcB4vo24aoI7dnIUWF2yU5p7RHSjYVuOu',
+  hamNinh: 'https://tse3.mm.bing.net/th/id/OIP.7GvKcG76mGC3CRSmK5EVLgHaEI?r=0&pid=Api&h=220&P=0',
   nightMarket: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArwU2kAjOcF8RK-JvLZc2CRkfsvQNA8XxTgztUYYorqCR4zJ1zmpVjscRlpX0OPm3yrcxnV-dmw3Dov33PhATR54dOCO0ccOspdRjHlSWamBdS02sfCKEToyx7IfL5z-ZcUv57rN7hzhR4dwBh4WY2mT70Q3ArDlDuv2Zhnbzoh6MA5S45U6vZkxlo4V_2-uz8TBZKXzoLKX55_nnVsZKsHTq1oi011HI_FOqsaWw5D6UHVM6038oEv2zFQctTB27Au5-y6b8o00Jx',
 };
 
