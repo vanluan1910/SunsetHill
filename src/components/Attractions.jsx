@@ -10,19 +10,19 @@ const SIGNATURE = [
     nameKey: 'attr.vinwonders', descKey: 'attr.vinwondersDesc',
     timeKey: 'attr.travel35', hoursKey: 'attr.hoursVinwonders',
     maps: 'https://maps.app.goo.gl/TEUqujT55kNfuPBU7',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCRBqlNDbQSepKhCP0NhMOLjcTU1g-NC09UWFHNRWYvgXGkNu04mTdy_f7_hGvjIfo0xMSJn1x5UftjeP7gqkuZBW-dXcRm-1uvG1l2i76FnmPGbR5M9WLA5cAWqDCUIF_0FRx5qqauFQ1_7-1EU2AJwdDv-5HrPIlFZZPg0XAXpJ9YJk2tvN1MC6hRVWNiIcM7LrUOPnMr5mbWSzH3WJYCfgbIuvDtWZV-Ze8KCD8IW3AQG2n3dFnt',
+    img: 'https://app-api.glodival.vn/storage/4/images/u07fZg6zSRuCpsB4exIekVZinrk1JqJAIak4tWj5.png',
   },
   {
     nameKey: 'attr.safari', descKey: 'attr.safariDesc',
     timeKey: 'attr.travel40', hoursKey: 'attr.hoursSafari',
     maps: 'https://maps.app.goo.gl/yWXRLLzgDY3ZWrS5A',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpa2fkijcg3Pd81kDgBbobLeSr3BiyKKAAVZ63t1Eiif91GIkInJLcKIu9wPUWaQXdgbMZtsB9oEHU6ZCUdFoPaS5IxfSfui0DmgU4-XDt9_8pwdbjIeHAc_mH6fBxtYCG5q4RJbnpRuk7Px2FL8oArZIWrZG37YG9a_SzNf7W_UyaJs5sKniYUJvwGz1IWrV9KLy55WF6BhAoubXXEZTFEQAmzLFmgFegHyfnkRyjNE5iz_2rtx_Y',
+    img: 'https://cassiacottage.com/wp-content/uploads/2025/10/Vinpearl-Phu-Quoc-Cassia-Cottage-Resort-and-Spa-4.jpg',
   },
   {
     nameKey: 'attr.kissBridge', descKey: 'attr.kissBridgeDesc',
     timeKey: 'attr.travel35', hoursKey: 'attr.kissBridgeSub',
     maps: 'https://maps.app.goo.gl/va5sNfcey29BddTS8',
-    img: 'https://visitphuquoc.com.vn/VisitPhuQuoc/Banner/Home/91/image-thumb__91__720_jpg/Kiss%20of%20the%20Sea%20show.078db5d3.jpg',
+    img: 'https://eholiday.vn/wp-content/uploads/2023/02/show-kiss-the-stars-phu-quoc.jpg',
   },
 ];
 
@@ -31,37 +31,37 @@ const SIGHTSEEING = [
     nameKey: 'attr.pagoda', descKey: 'attr.pagodaDesc', icon: 'temple_buddhist',
     distanceKey: 'attr.travel30', hoursKey: 'attr.hoursPagoda',
     maps: 'https://maps.app.goo.gl/2MMgpsxQA92s4RQAA',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC6IlxDB6rO82ANvOTj4glcQFkct5a9fA_2U9NTBxKEV3PmAyoBZZMHAdaJ26kh6NL2SFId3Tq3IDOlYICuno64NRdZrqLcZAc53SSuokDu3s0RhOs6jClWvMOuudXg4G2E9pXbohYehU1ixMEWfs0wIc5tTXuZMxu2KGGaak9lTtb2Q1bjHbc-_Kkg_bXAgmE1QdB3ch3TNXDiP1pPPv-MhQfwFxeud2ri3tAMDkNVOiYPAmibvWDt',
+    img: 'https://static.wixstatic.com/media/9d8ed5_9686a257279d4a72aeaf9cefe7d9bc2b~mv2.jpg/v1/fill/w_900,h_548,al_c,q_85,enc_avif,quality_auto/9d8ed5_9686a257279d4a72aeaf9cefe7d9bc2b~mv2.jpg',
   },
   {
     nameKey: 'attr.prison', descKey: 'attr.prisonDesc', icon: 'history_edu',
     distanceKey: 'attr.travel30', hoursKey: 'attr.hoursPrison',
     maps: 'https://maps.app.goo.gl/D4r9LKhuYXdgEzzEA',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMGyc-MoZqLM84IflgVkyrXh_eRNu27fSWre6UymMV-9zHGkfKwpTqWn30A_iY9N4v7SwNdvKBHltf0clHGF9CBQQuTxvQSSk291BqaBtQFdG4hjusmH8q73GBzn0tRj5BYB7WAImXzdjpeC78l8i0k8hYa7Hz4W2wf7XhCo7NiDwdyqIbfIRUnHeKUpHD6TKe1VR077LPPzQHq50vUrFv5SoO9vg5hOoTZeKCs7ysHr9H_9gREom5',
+    img: 'https://visitphuquoc.com.vn/VisitPhuQuoc/_default_upload_bucket/1824/image-thumb__1824__720_jpg/5.2c230584.77634fc8.jpg',
   },
   {
     nameKey: 'attr.pepperFarm', descKey: 'attr.pepperFarmDesc', icon: 'spa',
     distanceKey: 'attr.travel10', hoursKey: 'attr.hoursPepper',
     maps: 'https://maps.app.goo.gl/DneokAsKm5STDES66',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBAg8Olk-UYQTzkHKWRcs2dtzqwFD0RYmllJZ8r5sjEH22rMg8EAQ0FiVj3XxQ1C4dEBHK6qZozeNUZQ2CV8WsXI8a6dkQCLkUmgZgxPD_pznbXKt7SURZEGYod0qG8hiYOyeYAZPUEkaYTsFq3BHLnjKnS6MXBFSpGNs88pN_jPTAZOpHveB1p1LmVm9df-oXzAfY2rURRqcN8-uI7TaI1SwOViXXx2i7STI8gImXvP4Jd_8snGSIr',
+    img: 'https://kiengiangtravel.vn/wp-content/uploads/2017/10/vuon-tieu-phu-quoc-1024x768.jpg',
   },
   {
     nameKey: 'attr.pearlFarm', descKey: 'attr.pearlFarmDesc', icon: 'diamond',
     distanceKey: 'attr.travel10', hoursKey: 'attr.hoursCraft',
     maps: 'https://maps.app.goo.gl/ULXWtshbNX8SsuG19',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBOkMWmT8k0Nl0Nb_D90DZ-ZriXSFYrKCq1WDCE15W99luHnyXTYe5vQ-6k3TrMBTJ4yXxUsklHju6UVO7zrreylIo8JMIIrvqKkVg8-27avDBOhUSlJEg6Fcjvaj73CmlIgUNmOkXWOSZ1Rh_kGXKzPXIRnxPxUCPFA7EBgnVNJ330cR-Jh2cVlnjQ9Ki111lrooMSd_swbLG3MVa13g3Jlas_Q6wTRSrq4kbzyoQI0zTi3rXwUb9i',
+    img: 'https://file.hstatic.net/200000289353/article/imag0739_f1bbcddfdd994cd79dd12b78ecf1a5d2_1024x1024.jpg',
   },
   {
     nameKey: 'attr.fishSauce', descKey: 'attr.fishSauceDesc', icon: 'kitchen',
     distanceKey: 'attr.travel10', hoursKey: 'attr.hoursCraft',
     maps: 'https://maps.app.goo.gl/ZbYkdG31qpEm1n4x5',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDTaaKeoO0fZnHWTn-kCWLBjpFIOdzGCavLYzNDSCSTegf1hF-1IlcWLTSr-FTsPuKOuFZVZ-aEeiU2fvJK6micqjbpT19URFwLIdmIEb86NOX4XFX2A2eyIUi2RlK62AOSGC7cqlF337Y03ObihlJfdD8mDXaUq_cQ9041CT-c7kaGN4zzUpL3l9vkDs5LFxlXTXK8D_9seULrFTqCb9PUmiZPBkyKAgqcVUH3sESSGN0hjSSqGma-',
+    img: 'https://viettourist.com/resources/images/Blog-BienDao/mamthung-3.jpg',
   },
   {
     nameKey: 'attr.sunsetTown', descKey: 'attr.sunsetTownDesc', icon: 'wb_twilight',
     distanceKey: 'attr.travel35', hoursKey: 'explore.open24h',
     maps: 'https://maps.app.goo.gl/nmC99ZSPtADYbHzr8',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDqxZslTX-hgyUstrIDBVfyAC4xwqCZhwAF7igtJAedspbhD97m8EBSuRkBktStdvwOAXwMOKSrK8oBoL47Ygpjeo1XgMemRC2jXWZtOvYlyjjcQOyYVbELp_Z-XAYTamPR_ewbOevLgw1bGBKXkoW1240C-ILydzoZjK6ojDK18ey8GmGR9lhGuy37JwRAxOdgb4zdQh0SvJjro0xn85vr5Mdcq3wX3TfE4Hv3rYVTuhABxh3nz3vw',
+    img: 'https://vpq.vn/bai-viet/Sunset-Town.jpg',
   },
 ];
 
