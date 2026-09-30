@@ -37,7 +37,7 @@ const SIGHTSEEING = [
     nameKey: 'attr.prison', descKey: 'attr.prisonDesc', icon: 'history_edu',
     distanceKey: 'attr.travel30', hoursKey: 'attr.hoursPrison',
     maps: 'https://maps.app.goo.gl/D4r9LKhuYXdgEzzEA',
-    img: 'https://visitphuquoc.com.vn/VisitPhuQuoc/_default_upload_bucket/1824/image-thumb__1824__720_jpg/5.2c230584.77634fc8.jpg',
+    img: '/phu-quoc-prison.jpg',
   },
   {
     nameKey: 'attr.pepperFarm', descKey: 'attr.pepperFarmDesc', icon: 'spa',
@@ -49,7 +49,7 @@ const SIGHTSEEING = [
     nameKey: 'attr.pearlFarm', descKey: 'attr.pearlFarmDesc', icon: 'diamond',
     distanceKey: 'attr.travel10', hoursKey: 'attr.hoursCraft',
     maps: 'https://maps.app.goo.gl/ULXWtshbNX8SsuG19',
-    img: 'https://file.hstatic.net/200000289353/article/imag0739_f1bbcddfdd994cd79dd12b78ecf1a5d2_1024x1024.jpg',
+    img: '/pearl-farm.jpg',
   },
   {
     nameKey: 'attr.fishSauce', descKey: 'attr.fishSauceDesc', icon: 'kitchen',
