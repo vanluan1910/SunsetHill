@@ -43,7 +43,7 @@ const SIGHTSEEING = [
     nameKey: 'attr.pepperFarm', descKey: 'attr.pepperFarmDesc', icon: 'spa',
     distanceKey: 'attr.travel10', hoursKey: 'attr.hoursPepper',
     maps: 'https://maps.app.goo.gl/DneokAsKm5STDES66',
-    img: 'https://kiengiangtravel.vn/wp-content/uploads/2017/10/vuon-tieu-phu-quoc-1024x768.jpg',
+    img: 'https://hatienvegas.com/wp-content/uploads/2025/02/Tim-hieu-ve-Vuon-tieu-Kampot-Du-lich-Kampot-Hatienvegas-1-1200x800.jpg',
   },
   {
     nameKey: 'attr.pearlFarm', descKey: 'attr.pearlFarmDesc', icon: 'diamond',
